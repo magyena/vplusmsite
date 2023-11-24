@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-24T18:28:46 WIB" name="Default suite" finished-at="2023-11-24T18:29:22 WIB" duration-ms="36645">
+    <groups>
+    </groups>
+    <test started-at="2023-11-24T18:28:46 WIB" name="Default test" finished-at="2023-11-24T18:29:22 WIB" duration-ms="36645">
+      <class name="TC_Login_Phone.TC1_LoginBerhasil">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TC_Login_Phone.TC1_LoginBerhasil@7e6ef134]" started-at="2023-11-24T18:28:46 WIB" name="setup" finished-at="2023-11-24T18:28:55 WIB" duration-ms="9707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC1(java.util.HashMap)[pri:0, instance:TC_Login_Phone.TC1_LoginBerhasil@7e6ef134]" started-at="2023-11-24T18:28:56 WIB" name="TC1" data-provider="LoginPhoneBenar" finished-at="2023-11-24T18:29:20 WIB" duration-ms="24654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=08999239305, password=4321lupa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC_Login_Phone.TC1_LoginBerhasil@7e6ef134]" started-at="2023-11-24T18:29:21 WIB" name="tearDown" finished-at="2023-11-24T18:29:22 WIB" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC_Login_Phone.TC1_LoginBerhasil -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
