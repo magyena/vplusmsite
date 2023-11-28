@@ -34,7 +34,7 @@ public class ObjectRepository {
 	public WebElement ContinueWithEmail;
 	@FindBy(how = How.XPATH, using = "(//button[normalize-space()='Continue'])[1]")
 	public WebElement ContinueButton;
-	@FindBy(how = How.XPATH, using = "(//input[@placeholder='Your password'])[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/div/div/div/div[2]/div/div[2]/form/div/div/div[1]/input")
 	public WebElement FieldPassword;
 	@FindBy(how = How.XPATH, using = "(//input[@placeholder='-'])[1]")
 	public WebElement otp1;

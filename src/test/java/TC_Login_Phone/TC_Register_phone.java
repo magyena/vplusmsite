@@ -1,6 +1,7 @@
 package TC_Login_Phone;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.io.IOException;
