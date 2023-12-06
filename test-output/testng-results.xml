@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-28T21:52:44 WIB" name="Default suite" finished-at="2023-11-28T21:53:30 WIB" duration-ms="45582">
+  <suite started-at="2023-12-06T16:38:09 WIB" name="Default suite" finished-at="2023-12-06T16:42:27 WIB" duration-ms="257191">
     <groups>
     </groups>
-    <test started-at="2023-11-28T21:52:44 WIB" name="Default test" finished-at="2023-11-28T21:53:30 WIB" duration-ms="45582">
-      <class name="TC_Login_Phone.TC2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TC_Login_Phone.TC2@177bea38]" started-at="2023-11-28T21:52:44 WIB" name="setup" finished-at="2023-11-28T21:52:53 WIB" duration-ms="8828" status="PASS">
+    <test started-at="2023-12-06T16:38:09 WIB" name="Default test" finished-at="2023-12-06T16:42:27 WIB" duration-ms="257191">
+      <class name="org.Testcase.Visitor.TestCase14">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.Testcase.Visitor.TestCase14@503ecb24]" started-at="2023-12-06T16:38:09 WIB" name="setup" finished-at="2023-12-06T16:41:09 WIB" duration-ms="180048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TCRegisterBerhasil(java.util.HashMap)[pri:0, instance:TC_Login_Phone.TC2@177bea38]" started-at="2023-11-28T21:52:53 WIB" name="TCRegisterBerhasil" data-provider="dataLogin" finished-at="2023-11-28T21:53:30 WIB" duration-ms="36324" status="PASS">
+        <test-method signature="TC14(java.util.HashMap)[pri:0, instance:org.Testcase.Visitor.TestCase14@503ecb24]" started-at="2023-12-06T16:41:10 WIB" name="TC14" data-provider="dataLogin" finished-at="2023-12-06T16:42:25 WIB" duration-ms="75653" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,12 +21,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCRegisterBerhasil -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC_Login_Phone.TC2@177bea38]" started-at="2023-11-28T21:53:30 WIB" name="tearDown" finished-at="2023-11-28T21:53:30 WIB" duration-ms="1" status="PASS">
+        </test-method> <!-- TC14 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.Testcase.Visitor.TestCase14@503ecb24]" started-at="2023-12-06T16:42:25 WIB" name="tearDown" finished-at="2023-12-06T16:42:27 WIB" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TC_Login_Phone.TC2 -->
+      </class> <!-- org.Testcase.Visitor.TestCase14 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
