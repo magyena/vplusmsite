@@ -54,11 +54,11 @@ public class ObjectRepository extends IOSDriverManager {
 
 	public WebElement PackageButton() {// click
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[2]/aside/div/div[2]/div/div/div[1]/div[2]")));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"q-app\"]/div/div[2]/aside/div/div[2]/div/div/div[1]/div[2]")));
 	}
 
 	public WebElement VoucherButton() {// click
-		return driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/aside/div/div[2]/div/div/div[2]/div[2]"));
+		return driver.findElement(By.xpath("//*[@id=\"q-app\"]/div/div[2]/aside/div/div[2]/div/div/div[2]/div[2]"));
 	}
 
 	public WebElement PairAndroidTVButton() {// click
@@ -74,7 +74,7 @@ public class ObjectRepository extends IOSDriverManager {
 	}
 
 	public WebElement SettingsButton() {// click
-		return driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/aside/div/div[2]/div/div/div[6]/div[2]"));
+		return driver.findElement(By.xpath("//*[@id=\"q-app\"]/div/div[2]/aside/div/div[2]/div/div/div[6]/div[2]/span"));
 	}
 
 	public WebElement SupportButton() {// click
@@ -168,6 +168,76 @@ public class ObjectRepository extends IOSDriverManager {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//img[@alt='SPORTSTARS'])[1]")));
 	}
+	public WebElement VOD() {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//img[@alt='Temen Ngekost'])[1]")));
+	}
+	public WebElement PlayButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[1]/main/div[1]/div/div[2]/div[2]/div[1]/button/div[2]")));
+	}
+	public WebElement ShareButton() {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[1]/main/div[1]/div/div[2]/div[2]/div[3]/button/div[2]")));
+	}
+	public WebElement Eps1() {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//p[normalize-space()='Love Language - Episode - 1'])[1]")));
+	}
+	public WebElement EpgBeforeToday() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='date_num_box noselecttext'][normalize-space()='10'])[1]")));
+	}
+	
+	public WebElement Epg1() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[normalize-space()='11:00 - 12:00'])[1]")));
+	}
+	public WebElement LoginButtonFromEpg() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[normalize-space()='Login'])[1]")));
+	}
+	public WebElement Emailepg() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(20));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[6]/div[2]/div/div/div/div/div[2]/div[2]/button[1]")));
+	}
+	public WebElement InputEmailEpg() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(20));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[6]/div[2]/div/div/div/div/div[2]/form/div/div/input")));
+	}
+	public WebElement Googleepg() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(20));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"google-signin-btn-0\"]")));
+	}
+	public WebElement ContinueButtonEpg() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(20));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[6]/div[2]/div/div/div/div/div[2]/form/button")));
+	}
+	public WebElement FieldPasswordEPG() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[6]/div[2]/div/div/div/div/div[2]/form/div/div[2]/div[1]/input")));
+	}
+	public WebElement FieldSearch() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[1]/div[1]/div/div/div[1]/div[2]/label/div/div/div/input")));
+	}
+	public WebElement SearchResult() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[1]/div[1]/div/div/div[2]/div[2]/div[1]/div/div/div/div/div[2]/a/div")));
+	}
+	public WebElement SignoutButton() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@class='q-btn inline q-btn-item non-selectable no-shadow full-width q-btn--standard q-btn--rectangle text-white q-focusable q-hoverable q-btn--no-uppercase'])[1]")));
+	}
+	public WebElement ClosePopup() {
+		WebDriverWait wait = new WebDriverWait (driver,Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[4]/div[2]/div/div[1]/img[1]")));
+	}
+	//(//img[@alt='close'])[1]
+	
+	
+	
+	
 	public ObjectRepository(WebDriver driver) {
 		{
 			PageFactory.initElements(driver, this);

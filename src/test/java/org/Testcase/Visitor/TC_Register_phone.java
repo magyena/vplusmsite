@@ -40,24 +40,21 @@ public class TC_Register_phone extends IOSDriverManager {
 	@Test(dataProvider = "dataLogin")
 	public void TCRegisterBerhasil(HashMap<String, String> data)
 			throws JSchException, IOException, InterruptedException {
-
-		IOSDriverManager generated = new IOSDriverManager();
-		String Hasil = generated.generateRandomPhoneNumber();
-
 		driver.get("https://www.visionplus.id");
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step1" );
 		click.OthersButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step2" );
 		click.SinginButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step3" );
 		input.FieldPhone(Hasil);
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step4" );
 		click.ContinueButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step5" );
 		input.Password(data);
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase01","Step6" );
 		click.ContinueButton();
-		Allure.addAttachment("Screenshot", "image/png", "image data");
+	//	takeScreenshot(driver,"Testcase01","Step7" );
+		
 		Thread.sleep(3000);
 	}
 

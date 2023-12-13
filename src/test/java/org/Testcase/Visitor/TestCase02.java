@@ -35,23 +35,22 @@ public class TestCase02 extends IOSDriverManager {
 	@Test(dataProvider = "dataLogin")
 	public void TC2(HashMap<String, String> data) throws JSchException, IOException, InterruptedException {
 
-		IOSDriverManager generated = new IOSDriverManager();
-		String Hasil = generated.generateRandomPhoneNumber();
 		driver.get("https://www.visionplus.id");
-		Thread.sleep(2000);
+		takeScreenshot(driver,"Testcase02","Step1" );
 		click.OthersButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase02","Step2" );
 		click.SinginButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase02","Step3" );
 		input.FieldPhone(Hasil);
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase02","Step4" );
 		click.ContinueButton();
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase02","Step5" );
 		input.Password(data);
-		Thread.sleep(1000);
+		takeScreenshot(driver,"Testcase02","Step6" );	
 		click.ContinueButton();
 		Thread.sleep(200);
-
+		takeScreenshot(driver,"Testcase02","Step7" );
+		
 		IOSDriverManager extractor = new IOSDriverManager();
 
 		try {
@@ -65,16 +64,17 @@ public class TestCase02 extends IOSDriverManager {
 
 			input.FirstOtp(String.valueOf(otp1));
 			Thread.sleep(500);
+			takeScreenshot(driver,"Testcase02","Step8" );
 			input.SecondOtp(String.valueOf(otp2));
 			Thread.sleep(500);
+			takeScreenshot(driver,"Testcase02","Step9" );			
 			input.ThridtOtp(String.valueOf(otp3));
 			Thread.sleep(500);
+			takeScreenshot(driver,"Testcase02","Step10" );
 			input.FourthOtp(String.valueOf(otp4));
 			Thread.sleep(500);
+			takeScreenshot(driver,"Testcase02","Step11" );
 			Thread.sleep(5000);
-
-			Allure.addAttachment("Screenshot", "image/png", "image data");
-
 		} catch (JSchException | IOException e) {
 			// Handle JSchException and IOException as needed
 			e.printStackTrace();

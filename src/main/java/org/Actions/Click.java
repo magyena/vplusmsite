@@ -35,15 +35,19 @@ public class Click extends IOSDriverManager {
 	public void SinginButton() {
 		obj.SignInButton().click();
 	}
+
 	public void ContinueWithEmail() {
 		obj.ContinueWithEmail();
 	}
+
 	public void ContinueWithGoogle() {
 		obj.ContinueWithGoogle();
 	}
+
 	public void ContinueWithFacebook() {
 		obj.ContinueWithFacebook();
 	}
+
 	public void SearchIcon() {
 		obj.SearchIcon().click();
 	}
@@ -64,16 +68,18 @@ public class Click extends IOSDriverManager {
 		obj.ReferralCodeButton().click();
 	}
 
-	public void LinkedDeviceButton() { 
+	public void LinkedDeviceButton() {
 		obj.LinkedDeviceButton().click();
 	}
 
 	public void SettingsButton() {
 		obj.SettingsButton();
 	}
+
 	public void SupportButton() {
 		obj.SupportButton();
 	}
+
 	public void ContinueButton() {
 		obj.ContinueButton().click();
 	}
@@ -81,20 +87,76 @@ public class Click extends IOSDriverManager {
 	public void RctiChannel() {
 		obj.RctiChannel().click();
 	}
+
 	public void ClickPremiumChannel() {
 		obj.PremiumChannel().click();
 	}
-	public  void ClickSeeAll() {
+
+	public void ClickSeeAll() {
 		obj.SeeAll().click();
 	}
+
 	public void ClickBack() {
-		obj.PopupBackButton().click();;
+		obj.PopupBackButton().click();
+		;
 	}
-	  
+
 	public void ClickLogin() {
 		obj.PopupLoginButton().click();
 	}
+
 	public void ClickPremiumSportsChannel() {
 		obj.PremiumSportsChannel().click();
 	}
-}//20 click
+
+	public void ClickVod() {
+		obj.VOD().click();
+	}
+
+	public void ClickPlay() {
+		obj.PlayButton().click();
+	}
+
+	public void ClickShare() {
+		obj.ShareButton().click();
+	}
+
+	public void Clickeps1() {
+		obj.Eps1().click();
+	}
+
+	public void ClickBeforeTodayEpg() {
+		obj.EpgBeforeToday().click();
+	}
+
+	public void ClickContentBeforeTodayEpg() {
+		obj.Epg1().click();
+	}
+
+	public void ClickLoginFromEPG() {
+		obj.LoginButtonFromEpg().click();
+	}
+
+	public void ClickContinueWithEmailfromEPG() {
+		obj.Emailepg().click();
+	}
+
+	public void ClickContinueWithGooglefromEPG() {
+		obj.Googleepg().click();
+	}
+
+	public void ClickEpgContinueButton() {
+		obj.ContinueButtonEpg().click();
+	}
+
+	public void ClickSearchResult() {
+		obj.SearchResult().click();
+	}
+
+	public void ClickSignoutButton() {
+		obj.SignoutButton().getClass();
+	}
+	public void ClickClosePopup() {
+		obj.ClosePopup().click();
+	}
+}

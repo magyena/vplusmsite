@@ -52,7 +52,7 @@ public class IOSDriverManager {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("automationName", "XCUITest");
 			cap.setCapability("platformName", "iOS");
-			cap.setCapability("deviceName", "iPhone 12 Pro Max");
+			cap.setCapability("deviceName", "iPhone 11 Pro Max");
 			cap.setCapability("platformVersion", "15.2");
 			cap.setCapability("UDID", "519F38C9-23D1-44CF-8CD0-AAAB975A9B9B");
 			cap.setCapability("browserName", "Safari");
@@ -205,7 +205,7 @@ public class IOSDriverManager {
         }
     }
 	
-
+//
 	@AfterTest
 	public void tearDown() {
 		try {
@@ -216,7 +216,7 @@ public class IOSDriverManager {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
-		
+//	
+//		
 	}
 }

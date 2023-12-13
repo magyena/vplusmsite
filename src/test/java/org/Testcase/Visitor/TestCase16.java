@@ -6,21 +6,32 @@ import java.util.HashMap;
 import org.Actions.Click;
 import org.Actions.Scroll;
 import org.DeviceManager.IOSDriverManager;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 
 import com.jcraft.jsch.JSchException;
 
 import io.qameta.allure.Description;
 
-public class TestCase16 extends IOSDriverManager{
-	Click click = new Click ();
+public class TestCase16 extends IOSDriverManager {
+	Click click = new Click();
 	IOSDriverManager generated = new IOSDriverManager();
 	String Hasil = generated.generateRandomPhoneNumber();
 	Scroll scroll = new Scroll();
-	@Description("Pop Login in Premium Sports Linear Channels")
-	@Test(dataProvider = "dataLogin")
-	public void TC16(HashMap<String, String> data)
-			throws JSchException, IOException, InterruptedException {
 
-}
+	@Description("Free VOD")
+	@Test
+	public void TC16() throws JSchException, IOException, InterruptedException {
+		driver.get("https://www.visionplus.id");
+		takeScreenshot(driver, "Testcase16","Step1");
+		click.ClickVod();
+		takeScreenshot(driver, "Testcase16","Step2");
+		click.ClickPlay();
+		Thread.sleep(50000);
+		takeScreenshot(driver, "Testcase16","Step3");
+		Thread.sleep(5000);
+		
+	
+	
+	}
 }
